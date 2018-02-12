@@ -6,10 +6,12 @@
 //  Copyright © 2018 admin. All rights reserved.
 //
 
+
 #import "ViewController.h"
 #import "AppDelegate.h"
 #import "Person+CoreDataProperties.h"
 #import "SKKAddViewController.h"
+
 
 @interface ViewController () <UITableViewDelegate, UITableViewDataSource>
 
@@ -19,6 +21,7 @@
 @property (nonatomic, strong) UIButton *addButton;
 
 @end
+
 
 @implementation ViewController
 
