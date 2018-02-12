@@ -25,20 +25,15 @@
 - (void)viewWillAppear:(BOOL)animated
 {
     [super viewWillAppear:animated];
-    
     [self loadModel];
-    
     [self.tableView reloadData];
 }
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    
     [self createAddButton];
-    
     [self createTableView];
-    
     [self modelObjectsLog];
 
 }
@@ -139,8 +134,6 @@
 
 - (void)createAddButton
 {
-    //self.addButton = [[UIButton alloc] initWithFrame:CGRectMake(CGRectGetMaxX(self.view.bounds) - 100, 30, 80, 30)];
-    //self.addButton.layer.borderWidth = 1;
     self.addButton = [UIButton new];
     self.addButton.translatesAutoresizingMaskIntoConstraints = NO;
     [self.addButton setTitle:@"Add" forState:UIControlStateNormal];
